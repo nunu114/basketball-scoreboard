@@ -1,0 +1,94 @@
+:root {
+    --backgroundcolor: #047857;
+    --numcontainer: #064E3B;
+    --textwhite: #EEEEEE;
+    --textscore: #FCD34D;
+    --textnumber: #D1FAE5;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #D1FAE5;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+}
+
+h3 {
+    color: var(--textwhite);
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--backgroundcolor);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.numContainer {
+    background-color: var(--numcontainer);
+    font-family: MyFirstFont;
+    font-size: 70px;
+    color: var(--textscore);
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.btn {
+    font-family: MyFirstFont;
+    color: var(--textnumber);
+    font-size: 14px;
+    border: 1px solid var(--textnumber);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.btn:hover {
+    color: var(--textwhite);
+    border: 1px solid var(--textwhite);
+}
+
+.btn:active {
+    box-shadow: 0 0 0 white;
+    transform: scale(0.98);
+}
+
+.addCount {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120px;
+}
+
+.new-game-container {
+    flex: 1 100%;
+}
+
+.new-game {
+    background-color: transparent;
+    color: var(--textnumber);
+    border: 1px solid var(--textnumber);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.new-game:hover {
+    color: var(--textwhite);
+    border: 1px solid var(--textwhite);
+}
+
+.new-game:active {
+    transform: scale(0.98);
+}
